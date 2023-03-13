@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bkg"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_marginTop="80dp"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/txtBienvenido"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif"
+        android:text="BIENVENIDO"
+        android:textColor="@color/azulLight"
+        android:textSize="17dp" />
+
+    <EditText
+        android:id="@+id/txtCorreo"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/text_bkg"
+        android:drawableLeft="@drawable/email"
+        android:drawablePadding="8dp"
+        android:ems="19"
+        android:fontFamily="sans-serif"
+        android:hint="E-Mail"
+        android:textColorHint="@color/azulLight"
+        android:textSize="13dp"
+        android:padding="10dp"
+        android:inputType="textEmailAddress"/>
+
+    <EditText
+        android:id="@+id/txtContra"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/text_bkg"
+        android:drawableLeft="@drawable/lock"
+        android:drawablePadding="8dp"
+        android:ems="19"
+        android:fontFamily="sans-serif"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
+        android:textSize="13dp"
+        android:padding="10dp"
+        android:textColorHint="@color/azulLight" />
+
+    <Button
+        android:id="@+id/btnIniciarSesion"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/azulLight"
+        android:ems="15"
+        android:fontFamily="sans-serif"
+        android:text="INICIAR SESIÓN"
+        android:textColor="@color/azul"
+        app:cornerRadius="20dp" />
+
+</LinearLayout>
